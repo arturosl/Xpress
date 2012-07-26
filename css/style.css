@@ -1,0 +1,288 @@
+/* -------------------------------------------------------------- 
+  
+  RESET DEFAULT WEB BROWSER CSS.
+   
+   Based on work by Eric Meyer:
+   http://meyerweb.com/eric/tools/css/reset/index.html
+   
+-------------------------------------------------------------- */
+
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {background:#000;line-height: 1;}
+ol, ul {	list-style: none;}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img { border: none; }
+
+
+
+/* ########################  START CSS ##############################################
+
+
+/* #########  FONTS  ########*/
+@font-face {
+font-family: "Berlin";
+src: url(fonts/BRLNSR.ttf);
+src: local("Berlin"), url(fonts/BRLNSR.ttf) format("truetype");
+}
+
+@font-face {
+font-family: "Berlin Black";
+src: url(fonts/BRLNSB.ttf);
+src: local("Berlin Black"), url(fonts/BRLNSB.ttf) format("truetype");
+}
+
+@font-face {
+font-family: "Inconsolata";
+src: url(fonts/Inconsolata.otf);
+src: local("Inconsolata"), url(fonts/Inconsolata.otf) format("truetype");
+}
+
+
+/* ########  LAYOUT  ####### */
+body{width:100%;height:100%;background:#3b3b3c;color:#fff;}
+
+#wrapper{width:980px;height:100%;margin:0;position:relative;margin-bottom:20px;}
+
+/* ###### ELEMENTS ###### */
+
+/* BLOCKS */
+
+.block{width:710px;height:100%;position:relative;left:20px;}
+
+
+.block10, .block20, .block30, .block40, .block50{width:100%;background-color:transparent;position:relative;clear:both;}
+.block10{height:10px}
+.block20{height:20px}
+.block30{height:30px}
+.block40{height:40px}
+.block50{height:50px}
+
+/* FONTS  */
+
+.font10, .font20, .font30, .font40, .font50{line-height:100%}
+.font10{font-size:10px}
+.font20{font-size:20px}
+.font30{font-size:30px}
+.font40{font-size:40px}
+.font50{font-size:50px}
+
+/* COLORS */
+.blue{color:#1c73b6}
+.red{color:#c66a6a}
+.green{color:#7fc66a}
+.black{color:#3b3b3c}
+.yellow{color:#febb4a}
+h1.blue, h2.blue, h3.blue, h1.red, h2.red, h3.red, h1.green, h2.green, h3.green, h1.black, h2.black, h3.black, .block.blue, .block.red, .block.green, .block.black{padding:0;margin:0;}
+
+/*  FONT H1, H2, H3  ANUNCIOS*/
+
+h1.small, h2.small, h3.small, h1.middle, h2.middle, h2.middle, h1.big, h2.big, h3.big{font-family:"Berlin";}
+
+h1.small, h2.small, h3.small{font-size:25px}
+h1.middle, h2.middle, h2.middle{font-size:45px}
+h1.big, h2.big, h3.big{font-size:100px}
+
+/* ############ HEADER ############ */
+
+#header{height:100%;position:relative;margin:0;padding:0;}
+
+/* #######  NAVIGATION  ######*/
+#navigation{width:100%;height:80px;background:#3b3b3c;position:relative;font-family:"Berlin";font-size:20px;}
+#navigation .logo{width:100px;height:70px;position:relative;float:left;}
+#navigation ul{list-style:none;margin:0;padding:0;position:relative;left:20px;top:20px;float:left;}
+#navigation li {position:relative;float:left;margin:0;padding:0;margin-right:15px;}
+#navigation li a{color:#fff;float:left;margin: 0;padding:8px 8px;text-decoration:none;}
+#navigation li a:hover, #navigation li .active {height:60px;background:#1c73b6 url(images/navTxTureHover.jpg) repeat;-moz-border-radius: 15px;border-radius: 15px;}
+
+#navigation #navigationOptions{position:relative;float:right;top:28px;left:10px;}
+#navigation #navigationOptions a{color:#fff;margin: 0;padding:8px 8px;text-decoration:none;}
+#navigation #navigationOptions a:hover, #navigation #navigationOptions .active {background:#1c73b6 url(images/navTxTureHover.jpg) repeat;-moz-border-radius: 15px;border-radius: 15px;}
+
+/* ############  SIDEBAR  ############ */
+
+#sidebar{width:220px;height:1000px;background:#5e5e5f;position:relative;float:left;margin-bottom:30px;font-family:"Inconsolata";font-size:17px;}
+#sidebar ul{list-style:none;margin:0;padding:0;position:relative;width:220px;height:50px;}
+#sidebar ul li{margin-bottom:15px;}
+#sidebar ul a{display:block;}
+#sidebar ul li a{background:#515151 url(images/sidebarTxTure.jpg) repeat;text-decoration:none;padding:17px 16.5px;color:#fff;z-index:2;}
+#sidebar ul li a:hover, #sidebar li .active{width:243px;position:relative;background:url(images/sidebarMainHover.png) no-repeat;z-index:6;}
+
+/* # Submenu SIDEBAR # */
+
+#sidebar ul li .submenu{width:220px;height:100%;padding:0;position:relative;}
+#sidebar ul li .submenu a{background:#515151 url(images/sidebarTxTure.jpg) repeat-x;color:#fff;text-decoration:none;padding:17px 16.5px;position:relative;margin-bottom:8px;display:block;z-index:2;}
+#sidebar ul li .submenu span{width:20px;height:20px;background:#515151 url(images/sidebarTxTureHover.jpg) no-repeat;position:absolute;right:10px;top:15px;margin-bottom:5px;z-index:6;}
+#sidebar ul li .submenu li{margin-bottom:0px;background:#ebebeb;font-size:17px;}
+#sidebar ul li .submenu li a{width:220px;height:30px;background:transparent;color:#3c3c3d;padding:5px 10px;margin-bottom:0px;text-decoration:none;z-index:2;}
+#sidebar ul li .submenu li a:hover , #sidebar ul li .submenu li .active{width:233px;height:30px;background:url(images/sidebarSubmenuHover.png) no-repeat;color:#fff;font-size:18px;z-index:6;}
+
+/* ############ CONTENT ############ */
+
+#content{width:750px;height:100%;background:#ebebeb;position:relative;float:left;z-index:2;}
+
+/* # mensajes (notificaciones) # */
+
+#content .good, #content .warning, #content .error {width:710px;height:65px;position:relative;left:20px;margin-bottom:15px;font-family:"Berlin";font-size:20px;z-index:2px;}
+#content .good p, #content .warning p, #content .error  p{width:682px;margin:0;padding:16px 16px;}
+#content .good a, #content .warning a, .error  a{width:28px;height:27px;float:right;position:absolute;top:15px;right:12px;background:url(images/notifyButton.png) no-repeat;z-index:3;}
+#content .good a:hover, #content .warning a:hover, #content .error a:hover{background:url(images/notifyButtonHover.png) no-repeat;}
+
+.good{background:#92b566 url(images/notifyGood.jpg) no-repeat}
+.warning{background:#febb4a url(images/notifyWarning.jpg) no-repeat}
+.error{background:#e64249 url(images/notifyError.jpg) no-repeat}
+
+/* # submenuNav # */
+
+#submenuNav{width:710px;height:65px;position:relative;left:20px;font-family:"Berlin";font-size:18px;margin-bottom:80px;}
+#submenuNav ul{width:710px;height:65px;background:#3c3c3d url(images/submenuNav.jpg) no-repeat;list-style:none;margin:0;padding:0;position:relative;float:left;}
+#submenuNav li{width:160px;height:100%;position:relative;float:left;margin:0;padding:0;margin-right:20px;}
+#submenuNav .first{width:160px;height:100%;position:relative;float:left;margin:0;padding:0;margin-left:5px;margin-right:20px;}
+#submenuNav .end{width:160px;height:100%;position:relative;float:left;margin:0;padding:0;}
+#submenuNav li a{width:160px;height:65px;color:#fff;float:left;margin:0;padding:0;text-decoration:none;position:relative;top:17px;left:12px;}
+#submenuNav li:hover , #submenuNav .active{width:160px;height:65px;background:url(images/submenuNavHover.jpg);position:relative;top:0px;}
+
+/* ### ELEMENTOS ### */
+.table table, .table .tableFooter, .box .data , .box .event {margin:0 auto}
+
+/* # TABLA # */
+.table table{width:710px;height:100%;background:url(images/tableBG.jpg) repeat;position:relative;-moz-border-radius: 10px;border-radius: 10px;}
+
+.table table thead{position:relative;font-family:"Berlin";font-size:21px;}
+.table table thead tr td{width:160px;height:40px;padding:8px 10px;}
+
+.table table tbody{width:700px;height:100%;position:relative;left:5px;font-family:"Inconsolata";font-size:19px;-moz-border-radius: 10px;border-radius: 10px;}
+.table table tbody tr td{width:160px;height:100%;padding:4px 10px;}
+.table table tbody .shadow{background:#ebebeb;color:#3c3c3d;}
+
+.table .tableFooter{width:710px;height:70px;position:relative;}
+.table .tableFooter .tableTitle{width:200px;height:30px;background:url(images/tableBG.jpg);color:#fff;margin:0 auto;text-align:center;font-family:"Berlin";font-size:21px;}
+
+.table .tableNav{width:180px;height:100%;color:#fff;position:relative;margin:0;padding:0;left:540px;top:-10px;font-family:"Berlin Black";list-style:none;}
+.table .tableNav .button a, .table .tableNav .arrow a{margin:0px;padding:10px 10px;text-decoration:none;margin-right:5px;}
+.table .tableNav .button a{color:#fff;background:#3b3b3c;font-size:20px;-moz-border-radius: 35px;border-radius: 35px;float:left;}
+.table .tableNav .arrow a{color:#3b3b3c;font-size:32px;float:left;position:relative;top:-6px;}
+.table .tableNav .button a:hover , .table .tableNav .arrow a:hover , .table .tableNav .button .active, .table .tableNav .arrow .active{background:#1c73b6;color:#fff;-moz-border-radius:35px;border-radius:35px;}
+
+/* # BOX - EVENT & DATA # */
+.box{width:730px;color:#fff;position:relative;left:20px;}
+.box li{width:230px;height:231px;background:#151516 url(images/boxInf.jpg) no-repeat;position:relative;margin-bottom:20px;margin-right:10px;list-style:none;float:left;}
+
+/*DATA*/
+
+.box li .dataSet{width:200px;height:90px;text-align:center;font-size:110px;padding:10px;font-family:"Berlin Black";font-size:110px;}
+.box li .dataTitle{width:190px;height:100px;color:#fff;position:relative;left:10px;font-size:30px;font-family:"Inconsolata";}
+.box li:hover{color:#1c73b6;}
+
+/*EVENT*/
+
+.box li .eventTitle{height:25%;position:relative;top:10px;text-align:center;font-family:"Berlin";font-size:35px;z-index:2;}
+.box li .event{width:100%;height:75%;position:relative;margin:0;padding:0;}
+.box li .event li{height:30px;background:none;position:relative;float:left;list-style:none;width:230px;margin:0;padding:0;margin-bottom:-8px;}
+.box li .event li .eventData{color:#fff;position:relative;font-size:18px;float:left;left:10px;}
+.box li .event li .eventDate{color:#fff;position:relative;font-size:15px;float:right;top:5px;right:10px;}
+.box li p a{width:44px;height:37px;background:url(images/eventInfo.png) no-repeat;position:absolute;top:196px;left:187px;}
+.box li p a:hover{width:44px;height:37px;background:url(images/eventInfoHover.png) no-repeat;position:absolute;top:196px;left:187px;}
+
+/* # FORM # */
+
+.form{width:600px;height:100%;position:relative;margin:0;padding:0;left:20px;font-family:"Inconsolata";}
+.form form .formTitle{color:#919191;position:relative;font-size:35px;margin-bottom:40px;}
+
+.form form .formContent{width:560px;position:relative;left:40px;margin:0;padding:0;margin-bottom:50px;}
+.form form .formContent li{margin-bottom:10px;list-style:none;}
+
+.form form .formContent p{font-size:20px;color:#000;margin-bottom:10px;}
+
+.form form .formContent input, .form form .formContent input.field-warning, .form form .formContent input.field-error, .form form .formContent select, .form form .formContent textarea{width:560px;height:28px;color:#3b3b3c;background:#f7f7f6;border:none;font-size:17px;padding:5px;font-family:"Inconsolata";}
+.form form .formContent input:focus, .form form .formContent select:focus,.form form .formContent textarea:focus, .form form .formContent input.field-warning:focus, .form form .formContent input.field-error:focus{border:2px solid #1c73b6}
+
+.form form .formContent select{width:460px;height:35px;}
+.form form .formContent textarea{width:460px}
+
+.form form .formContent textarea.small{height:80px}
+.form form .formContent textarea.middle{height:150px}
+.form form .formContent textarea.big{height:250px}
+
+/* Input type's: ERROR & WARNING */
+.form form .formContent input.field-warning{border:2px solid #febb4a}
+.form form .formContent input.field-error{border:2px solid #c66a6a}
+
+.form form .formOptions{width:320px;height:50px;position:relative;}
+.form form .formOptions li{float:left;position:relative;margin-right:20px;}
+.form form .formOptions li:hover{background:#1c73b6}
+
+.form form .formOptions .add, .form form .formOptions .update{width:45px;height:40px;background:#7fc66a;position:relative;}
+
+.form form .formOptions .update{width:45px;height:40px;background:#7fc66a url(images/formUpdate.jpg) no-repeat;}
+.form form .formOptions .update:hover{background:#1c73b6 url(images/formUpdateHover.jpg) no-repeat}
+
+.form form .formOptions .add{width:45px;height:40px;background:#7fc66a url(images/formAdd.jpg) no-repeat;}
+.form form .formOptions .add:hover{background:#1c73b6 url(images/formAddHover.jpg) no-repeat}
+
+.form form .formOptions .erase{width:45px;height:40px;background:#c66a6a url(images/formErase.jpg) no-repeat;}
+.form form .formOptions .erase:hover{background:#1c73b6 url(images/formEraseHover.jpg) no-repeat}
+
+.biOption{width:400px;height:40px;position:relative;margin:0;padding:0;font-family:"Berlin";}
+.biOption.center{margin:0 auto;}
+.biOption li{list-style:none;float:left;margin-right:120px;}
+.biOption li:hover, .biOption .active{background:#1c73b6}
+.biOption li a{width:80px;height:40px;color:#fff;position:absolute;font-size:30px;text-decoration:none;text-align:center;top:4px;}
+
+.biOption .on, .biOption .off, .biOption .active{width:80px;height:100%;position:relative;-moz-border-radius: 15px;border-radius: 15px;float:left;}
+.biOption .on{background:#7fc66a}
+.biOption .off{background:#c66a6a}
+
+
+
+/* ############ FOOTER ############ */
+
+#footer{width:970px;height:80px;color:#3b3b3c;position:relative;font-family:"Inconsolata";font-size:20px;clear:both;margin:0 auto;}
+#footer p{padding:15px 20px;margin:0;}
+#footer p.right{float:right;}
+#footer .main{width:699px;height:50px;background:url(images/footerMain.png) no-repeat;float:left;position:relative;top:20px;margin-right:-4px;}
+#footer .second{width:275px;height:50px;background:url(images/footerSecond.png) no-repeat;float:left;position:relative;top:20px;}
