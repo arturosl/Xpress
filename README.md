@@ -2,4 +2,4 @@
 
 ## Demo
    
-http://arturosl.net/demo/Xpress
+http://arturosl.net/demos/Xpress
